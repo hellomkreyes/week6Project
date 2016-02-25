@@ -4,6 +4,9 @@ html {
 }
 
 body {
+	background: url('../assets/heroimage.jpg') fixed center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: $baseFont;
 	font-size: 20px;
 	font-size: 2rem;
@@ -29,17 +32,26 @@ a {
 
 h1 {
 	font-family: $baseFont;
-	font-size: 5.8rem;
+	font-size: 7rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin: 0;
 }
 
 h2 {
 	font-family: $headerFont;
-	font-size: 2.4rem;
+	font-size: 4rem;
 }
 
 h3 {
 	font-family: $baseFont;
-	font-size: 1.6rem;
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+
+h1, h2, h3 {
+	color: lighten($lightestgreen, 10%); 
 }
 
 
