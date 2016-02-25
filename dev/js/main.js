@@ -198,14 +198,9 @@ var chartOptions = {
 
 };
 
-var chartSet = function() {
-// Get context with jQuery - using jQuery's .get() method.
-var ctx = $("#myChart").get(0).getContext("2d");
-// var ctx = document.getElementById("myChart");
-var ctxt = ctx.getContext("2d");
-// This will get the first returned node in the jQuery collection.
-var myLineChart = new Chart(ctx).Line(chartData);
-  
+app.chartSet = function() {
+  var ctx = $('#myChart').get(0).getContext("2d");
+  var myNewChart = new Chart(ctx).Line(chartData, chartOptions);
 }
 
 //INIT FUNCTION
