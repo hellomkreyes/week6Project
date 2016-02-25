@@ -3,5 +3,26 @@ $lightgreen: #C9EFB4;
 $darkblue: #140F4D;
 $blue: #5B6195;
 $lightestgreen: #D3F2CB;
-$headerfont: 'Montserrat', sans-serif;
-$bodyfont: 'Open Sans', sans-serif;
+
+$headerFont: 'adamregular', sans-serif;
+$baseFont: 'avenir', sans-serif;
+
+
+@font-face {
+   font-family: 'adamregular';
+   src: url('fonts/adam-webfont.eot');
+   src: url('fonts/adam-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/adam-webfont.woff2') format('woff2'),
+        url('fonts/adam-webfont.woff') format('woff'),
+        url('fonts/adam-webfont.ttf') format('truetype'),
+        url('fonts/adam-webfont.svg#adamregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'avenir';
+   src: url('fonts/avenir.ttc'); 
+   font-weight: normal;
+   font-style: normal;
+}
