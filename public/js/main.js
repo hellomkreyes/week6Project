@@ -233,7 +233,7 @@ app.chartOptions = {
 
 //ON BUTTON CLICK, LABEL & DATA VALUES IN CHART DATA ARE REASSIGNED TO OUR FILTERED INFO FROM THE API
 app.chartShow = function () {
-  $('li').on('click', function (e) {
+  $('.energy__listItems li').on('click', function (e) {
     e.preventDefault();
     //ASSIGNS TYPESELECTION TO DATA VALUE OF BUTTON
     app.typeSelection = $(this).data("energy");
@@ -241,7 +241,8 @@ app.chartShow = function () {
     //VARIABLE FOR LOOP TO KNOW LOCATION IN CHART DATASET ARRAY
     var index = 0;
     //FOR LOOP UPDATES LABELS OF CHART DATASETS TO COUNTRY IDS
-    for (item in app.results[app.typeSelection]) {
+    console.log(app.results[app.typeSelection]);
+    for (var item in app.results[app.typeSelection]) {
       var dataset = app.chartData.datasets[index];
       console.log(item);
       console.log(app.results[app.typeSelection]);
