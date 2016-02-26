@@ -11,9 +11,20 @@
 </head>
 <body>
 
-	
 <!--LANDING PAGE-->
 		<header class="landing">
+			<!--NAV-->
+			<nav class="nav">
+			  
+			    <ul class="nav__listItems">
+			      	<li class="nav__Logo"><img src="assets/logoWhiteBlue.png" alt="Project Renew Logo - temperature data chart"></li>
+			    	<li class="nav__listItems__infograph"><a href="#">Home</a></li>
+			      	<li class="nav__listItems__infograph"><a href="#infoGraph">Infograph</a></li>
+			      	<li class="nav__listItems__energy"><a href="#infoGraph">Renewable <br>Energy</a></li>
+			      	<li class="nav__listItems__resources"><a href="#resourcePage">Resources</a></li>
+			    </ul>
+				
+			</nav>
 			<div class="wrapper">
 	    		<div class='landing__innerContainer'>
 	        		<h1>Project Renew</h1>
@@ -22,26 +33,8 @@
 	      		</div>
 			</div>
 		</header>
-<!--INFOGRAPHIC-->
-		<section class="infograph" id='infoGraph'>
-			<h2></h2>
-		<!--EARTH SVG-->
-			
-	<!--INFOGRAPH INFO-->
-				<div class="infograph__renewableInfo">
-					<div class="wrapper">
-						<p class="infograph__renewableInfo__info1"></p>
-						<p class="infograph__renewableInfo__info2"></p>
-					</div>
-				</div>
-				<div class="infograph__climateInfo">
-					<div class="wrapper">
-						<p class="infograph__climateInfo__info1"></p>
-						<p class="infograph__climateInfo__info2"></p>
-					</div>
-				</div>
-			</div>
-		</section>
+
+	
 <!--ENERGY-->
 		<section class="energy">
 			<div class="wrapper">
@@ -73,8 +66,24 @@
 					<p></p>
 					<!-- <a href=""></a> --> <!--This triggers the API info to load in the next section-->
 				</div>
-			</div>
+			</div> <!-- end of wrapper -->
 		</section>
+
+		<!--INFOGRAPH INFO-->
+			<!--INFOGRAPHIC-->
+			<section class="infograph" id='infoGraph'>
+				<div class="wrapper">
+					<h2>Climate Change & Renewable Energy Sources of The G8</h2>
+					<div class="infograph__renewableInfo">
+						<p class="infograph__renewableInfo__info1"></p>
+						<p class="infograph__renewableInfo__info2"></p>
+					</div>
+					<div class="infograph__climateInfo">
+						<p class="infograph__climateInfo__info1"></p>
+						<p class="infograph__climateInfo__info2"></p>
+					</div>
+				</div> <!-- end of wrapper -->
+			</section>
 <!--CHART-->
 		<section class="chart">
 			<div class="wrapper">
@@ -83,18 +92,7 @@
 		</section>
 <!--RESOURCES & FOOTER-->
 		<section class="resources" id="resourcePage">
-			<!--NAV-->
-			<nav class="nav">
-		   
-			    <ul class="nav__listItems">
-			    	<li class="nav__listItems__infograph"><a href="#">Home</a></li>
-			      	<li class="nav__listItems__infograph"><a href="#infoGraph">Infograph</a></li>
-			      	<li class="nav__Logo"><img src="assets/logo.png" alt="Project Renew Logo - temperature data chart"></li>
-			      	<li class="nav__listItems__energy"><a href="#infoGraph">Renewable <br>Energy</a></li>
-			      	<li class="nav__listItems__resources"><a href="#resourcePage">Resources</a></li>
-			    </ul>
-				
-			</nav>
+		
 			<div class="wrapper">
 				<div class="resources__climateResources">
 					<h3 class="resources__climateResources__title"></h3>
