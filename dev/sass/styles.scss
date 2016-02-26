@@ -3,6 +3,29 @@
 @import 'global';
 
 // LANDING PAGE
+.nav {
+	width: 15%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1%;
+	background: fade-out($darkblue, 0.5);
+	&__listItems {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		li {
+			padding: 5%;
+			a {
+				text-transform: uppercase;
+				color: lighten($lightestgreen, 10%);
+				letter-spacing: 2px;
+			}
+		}
+	}
+}
 
 // Header
 
@@ -30,14 +53,7 @@
 
 .infograph {
 	max-width: 100%;
-	&__renewableInfo {
-		width: 100%;
-		background: $blue;
-	}
-	&__climateInfo {
-		width: 100%;
-		background: $darkblue;
-	}
+	background: $blue;
 }
 
 
@@ -45,25 +61,4 @@
 
 .resources {
 	background: $lightgreen;
-}
-
-.nav {
-	width: 100%;
-	// position: fixed;
-	// top: 0;
-	// left: 0;
-	padding: 1%;
-	&__listItems {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		li {
-			padding: 3%;
-			a {
-				text-transform: uppercase;
-				color: lighten($darkblue, 10%);
-				letter-spacing: 2px;
-			}
-		}
-	}
 }
