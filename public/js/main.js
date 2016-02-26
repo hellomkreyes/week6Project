@@ -129,7 +129,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [65, 59, 80, 81, 56, 55, 40]
+    data: []
   }, {
     label: "Two",
     fillColor: "rgba(151,187,205,0.2)",
@@ -138,7 +138,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(151,187,205,1)",
-    data: [28, 48, 40, 19, 86, 27, 90]
+    data: []
   }, {
     label: "Three",
     fillColor: "rgba(220,220,220,0.2)",
@@ -147,7 +147,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [65, 59, 80, 81, 56, 55, 40]
+    data: []
   }, {
     label: "Four",
     fillColor: "rgba(220,220,220,0.2)",
@@ -156,7 +156,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [65, 59, 80, 81, 56, 55, 40]
+    data: []
   }, {
     label: "Five",
     fillColor: "rgba(220,220,220,0.2)",
@@ -165,7 +165,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [65, 59, 80, 81, 56, 55, 40]
+    data: []
   }, {
     label: "Six",
     fillColor: "rgba(220,220,220,0.2)",
@@ -174,7 +174,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [65, 59, 80, 81, 56, 55, 40]
+    data: []
   }, {
     label: "Seven",
     fillColor: "rgba(220,220,220,0.2)",
@@ -183,7 +183,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [65, 59, 80, 81, 56, 55, 40]
+    data: []
   }, {
     label: "Eight",
     fillColor: "rgba(220,220,220,0.2)",
@@ -192,7 +192,7 @@ app.chartData = {
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [65, 59, 80, 81, 56, 55, 40]
+    data: []
   }]
 };
 
@@ -242,12 +242,12 @@ app.chartSet = function () {
     app.typeSelection = $(this).data("energy");
     console.log(app.typeSelection);
     //VARIABLE FOR LOOP TO KNOW LOCATION IN CHART DATASET ARRAY
-    var whatever = 0;
+    var index = 0;
     //FOR LOOP UPDATES LABELS OF CHART DATASETS TO COUNTRY IDS
     for (item in app.results[app.typeSelection]) {
       console.log(item);
-      app.chartData.datasets[whatever].label = item;
-      whatever++;
+      app.chartData.datasets[index].label = item;
+      index++;
     } //END FOR ITEM IN APP LOOP
 
     // app.results[app.typeSelection].forEach(function(val, i) {
