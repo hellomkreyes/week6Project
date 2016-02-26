@@ -20,7 +20,7 @@ gulp.task('styles', () => {
 })
 
 gulp.task('scripts', () => {
-	gulp.src('./dev/js/main.js')
+	gulp.src('./dev/js/*.js')
 	   .pipe(babel({
 	     presets: ['es2015']
 	   }))
