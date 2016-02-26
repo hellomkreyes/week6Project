@@ -136,9 +136,77 @@ svg {
 	fill: $lightestgreen;
 }
 }
+// .legendContainer {
+// 	ul {
+// 		list-style: none;
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 	}
+// ​
+// 	ul li {
+// 		padding-left: 22px;
+// 		padding-right: 25px;
+// 	}
+// 	ul li::before {
+// 		content: '';
+// 		display: block;
+// 		position: relative;
+// 		width: 13px;
+// 		height: 13px;
+// 		left: -18px;
+// 		top: 16px;
+// 	}
+// 	ul li.ca::before {
+// 		background: #809275;
+// 	}
+// ​
+// 	ul li.fr::before {
+// 		background: #A3AFF4;
+// 	}
+// ​
+// 	ul li.de::before {
+// 		background: #F189E6;
+// 	}
+// ​
+// 	ul li.it::before {
+// 		background: #F1594D;
+// 	}
+// ​
+// 	ul li.jp::before {
+// 		background: #BFDCB0;
+// 	}
+// ​
+// 	ul li.ru::before {
+// 		background: #81CACA;
+// 	}
+	
+// 	ul li.us::before {
+// 		background: #F0AEAB;
+// 	}	
+// 	ul li.gb::before {
+// 		background: #EFE232;
+// 	}
+	// ul li:last-child {
+	// 	flex: 1 0 100%;
+	// 	margin-top: 17px;
+	// 	padding: 0;​
+	// }
+	// ul li:last-child::before {
+	// 	content: '';
+	// 	display: none;
+	// }
+// }
 
 // RESOURCES
 
 .resources {
-	background: $lightgreen;
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/heroimage.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	h3 {
+		margin: 0;
+	}
 }
