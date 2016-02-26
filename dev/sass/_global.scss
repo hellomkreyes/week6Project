@@ -17,6 +17,10 @@ body {
 }
 
 ul {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 	padding: 0;
 	li {
 	list-style: none;
@@ -39,11 +43,13 @@ h1 {
 h2 {
 	font-family: $headerFont;
 	font-size: 4rem;
+	text-align: center;
+	margin: 0;
 }
 
 h3 {
 	font-family: $baseFont;
-	font-size: 3.5rem;
+	font-size: 2.6rem;
 	font-weight: 300;
 }
 
