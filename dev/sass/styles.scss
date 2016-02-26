@@ -4,7 +4,7 @@
 
 // LANDING PAGE
 .nav {
-	width: 15%;
+	width: 13%;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -12,13 +12,25 @@
 	left: 0;
 	padding: 1%;
 	background: fade-out($darkblue, 0.5);
+	z-index: 10;
+	&__Logo img {
+		width: 100%;
+		height: auto;
+	}
 	&__listItems {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
+		padding: 0;
 		li {
-			padding: 5%;
+			width: 100%;
+			padding: 5% 0;
 			a {
+				padding: 6% 0;
+				display: inline-block;
+				// height: 100%;
+				width: 100%;
+				font-size: 1.6rem;
 				text-transform: uppercase;
 				color: lighten($lightestgreen, 10%);
 				letter-spacing: 2px;
@@ -39,6 +51,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	h3 {
+		font-size: 3.5rem;
+	}
 	&__innerContainer {
 		width: 100%;
 		padding-top: 10%;
@@ -53,12 +68,145 @@
 
 .infograph {
 	max-width: 100%;
-	background: $blue;
+	padding: 10% 0;
+	background-color: $blue;
+	background-image: url('../assets/earth.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	h2 {
+		position: absolute;
+		top: 38%;
+		left: 35%;
+	}
+	.infograph__wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	&__renewableInfo {
+		margin: 0;
+		width: 25%;
+		// height: 200px;
+		display: flex;
+		flex-flow: row wrap;
+		color: $lightestgreen;
+	}
+	&__climateInfo {
+		margin: 0;
+		width: 25%;
+		// height: 200px;
+		display: flex;
+		flex-flow: row wrap;
+		color: $lightestgreen;
+	}
+	}
 }
 
+//ENERGY 
+
+.energy {
+	background: $darkblue;
+	padding: 4% 0;
+	&__listItems {
+		width: 80%;
+		margin: 0 auto;
+		padding: 3% 0;
+		li {
+			width: 18%;
+			padding: 10px;
+			margin: 0 5px;
+			text-align: center;
+			background: darken($blue,17%);
+			border-radius: 10px;
+		}
+	}
+	&__itemInfo {
+		display: none;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			color: $lightestgreen;
+		}
+	}
+}
+svg {
+	width: 90%;
+	path {
+	fill: $lightestgreen;
+}
+}
+// .legendContainer {
+// 	ul {
+// 		list-style: none;
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 	}
+// ​
+// 	ul li {
+// 		padding-left: 22px;
+// 		padding-right: 25px;
+// 	}
+// 	ul li::before {
+// 		content: '';
+// 		display: block;
+// 		position: relative;
+// 		width: 13px;
+// 		height: 13px;
+// 		left: -18px;
+// 		top: 16px;
+// 	}
+// 	ul li.ca::before {
+// 		background: #809275;
+// 	}
+// ​
+// 	ul li.fr::before {
+// 		background: #A3AFF4;
+// 	}
+// ​
+// 	ul li.de::before {
+// 		background: #F189E6;
+// 	}
+// ​
+// 	ul li.it::before {
+// 		background: #F1594D;
+// 	}
+// ​
+// 	ul li.jp::before {
+// 		background: #BFDCB0;
+// 	}
+// ​
+// 	ul li.ru::before {
+// 		background: #81CACA;
+// 	}
+	
+// 	ul li.us::before {
+// 		background: #F0AEAB;
+// 	}	
+// 	ul li.gb::before {
+// 		background: #EFE232;
+// 	}
+	// ul li:last-child {
+	// 	flex: 1 0 100%;
+	// 	margin-top: 17px;
+	// 	padding: 0;​
+	// }
+	// ul li:last-child::before {
+	// 	content: '';
+	// 	display: none;
+	// }
+// }
 
 // RESOURCES
 
 .resources {
-	background: $lightgreen;
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/heroimage.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	h3 {
+		margin: 0;
+	}
 }

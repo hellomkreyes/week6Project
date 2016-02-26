@@ -1,4 +1,7 @@
 var hiddenBox = $( "#bannerMessage" );
-$( "#buttonContainer button" ).on( "click", function( event ) {
-  hiddenBox.show();
+$( ".energy__listItems li" ).on( "click", function( event ) {
+	$('#bannerMessage h3').html($(this).data('title'));	
+	$('#bannerMessage p').html($(this).data('text'));	
+	// $('#bannerMessage button').data('background',yellow);
+  hiddenBox.slideToggle();
 });
