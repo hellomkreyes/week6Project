@@ -5,6 +5,19 @@ $blue: #5B6195;
 $lightestgreen: #D3F2CB;
 
 $headerFont: 'Montserrat', sans-serif;
-$baseFont: 'Work Sans', sans-serif;
+$baseFont: 'Open Sans', sans-serif;
 
+//MIXINS
+@mixin headingStyle($pixelSize, $remSize, $weight) {
+	font-family: $headerFont;
+	font-size: $pixelSize;
+	font-size: $remSize;
+	font-weight: $weight;
+}
 
+@mixin bodyStyle($pixelSize, $remSize, $weight) {
+	font-family: $baseFont;
+	font-size: $pixelSize;
+	font-size: $remSize;
+	font-weight: $weight;
+}

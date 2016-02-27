@@ -1,0 +1,80 @@
+// RESOURCES
+.resources {
+	margin: 0;
+	padding: 4% 0 0 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/heroimage.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	p {
+		color: $lightestgreen;
+	}
+	h3 {
+		margin: 0;
+		padding: 3% 0 0 0;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		color: $lightestgreen;
+		font-size: 3.5rem;
+	}
+}
+
+.resources__climateResources__info {
+	width: 60%;
+	margin: 0 auto;
+	padding: 2% 0;
+}
+
+.resources__climateResources, .resources__renewableResources {
+	background: fade-out($lightestgreen, 0.6);
+	margin-top: 3%;
+	padding: 3% 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	a {
+		img{
+		width: 300px;
+		height: auto;
+		}
+		.imgResize {
+				width: 500px;
+		}
+	}
+}
+
+.resources__renewableResources {
+	&__title {
+		padding-top: 5%;
+	}
+}
+
+.footer__wrapper {
+	padding: 1% 0;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	.footer_links {
+		width: 100%;
+		ul {
+			display: flex;
+		}
+	}
+	.footer__devs {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		p {
+			width: 20%;
+		}
+		a {
+			color: $blue;
+			text-transform: uppercase;
+			&:hover {
+				color: $lightestgreen;
+			}
+		}
+	}
+}

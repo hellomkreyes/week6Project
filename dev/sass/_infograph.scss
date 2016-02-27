@@ -1,0 +1,40 @@
+// INFOGRAPHIC
+.infograph {
+	max-width: 100%;
+	padding: 10% 0;
+	background-color: $blue;
+	background-image: url('../assets/earth.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	.infograph__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		&__renewableInfo {
+			margin: 0;
+			width: 25%;
+			display: flex;
+			flex-flow: row wrap;
+			color: $lightestgreen;
+			padding: 2.5%;
+		}
+		&__title {
+			display: flex;
+			flex-direction: column;
+			h2 {
+				font-size: 45px;
+				font-size: 4.5rem;
+				margin: auto;
+			}
+		}
+		&__climateInfo {
+			margin: 0;
+			width: 25%;
+			display: flex;
+			flex-flow: row wrap;
+			color: $lightestgreen;
+			padding: 2%;
+		}
+	}
+}
