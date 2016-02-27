@@ -1,5 +1,5 @@
 .nav {
-	width: 13%;
+	width: 11%;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -29,6 +29,7 @@
 				font-size: 1.6rem;
 				font-weight: 400;
 				text-transform: uppercase;
+				text-align: left;
 				color: $blue;
 				// color: lighten($lightestgreen, 10%);
 				letter-spacing: 2px;

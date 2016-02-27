@@ -27,16 +27,16 @@
 }
 
 .resources__climateResources, .resources__renewableResources {
-	background: fade-out($lightestgreen, 0.6);
+	background: none;
 	margin-top: 3%;
-	padding: 3% 0;
+	padding: 3% 5%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
 	a {
 		img{
-		width: 300px;
+		// width: 300px;
 		height: auto;
 		}
 		.imgResize {
@@ -52,7 +52,7 @@
 }
 
 .footer__wrapper {
-	padding: 1% 0;
+	padding: 1% 0 0 9%;
 	flex-flow: column wrap;
 	justify-content: space-around;
 	.footer_links {

@@ -16,14 +16,23 @@
 		justify-content: center;
 		align-items: center;
 		h2 {
+			font-family: $baseFont;
+			font-weight: 100;
+			font-size: 2rem;
+			color: $lightgreen;
 			text-transform: uppercase;
 			letter-spacing: 1rem;
+
 		}
 		h3 {
 			font-size: 35px;
 			font-size: 3.5rem;
 			padding: 2rem 0;
 			letter-spacing: 0.5rem;
+		}
+		&__imgLogo {
+
+			margin-bottom: 10%;
 		}
 	}	
 }
