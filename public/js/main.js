@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
 //TO DO:
 //REVIEW VARIABLE NAMES FOR DREW-NESS
 
 //DECLARE GLOBAL APP VARIABLE
 var app = {};
-
+app.hiddenBox = $("#bannerMessage");
 app.typeSelection = ""; //FOR CHART SELECT BUTTON
 
 //URLS FOR DIFFERENT ENDPOINTS
@@ -235,6 +235,10 @@ app.chartOptions = {
 app.chartShow = function () {
   $('.energy__listItems li').on('click', function (e) {
     e.preventDefault();
+    $('#bannerMessage').hide();
+    $('#bannerMessage h3').html($(this).data('title'));
+    $('#bannerMessage p').html($(this).data('text'));
+    app.hiddenBox.slideToggle();
     //ASSIGNS TYPESELECTION TO DATA VALUE OF BUTTON
     app.typeSelection = $(this).data("energy");
     console.log(app.typeSelection);
