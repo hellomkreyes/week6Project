@@ -1,0 +1,88 @@
+//ENERGY 
+.energy {
+	background: $darkblue;
+	padding: 4% 0;
+	&__listItems {
+		width: 80%;
+		margin: 0 auto;
+		padding: 3% 0;
+		li {
+			width: 18%;
+			padding: 10px;
+			margin: 0 5px;
+			text-align: center;
+			background: darken($blue,17%);
+			border-radius: 10px;
+		}
+	}
+	&__itemInfo {
+		display: none;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			color: $lightestgreen;
+		}
+	}
+}
+
+svg {
+	width: 90%;
+	path {
+	fill: $lightestgreen;
+	}
+}
+
+.legendContainer {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		padding-left: 22px;
+		padding-right: 25px;
+		color: $lightestgreen;
+		&:before {
+			content: '';
+			display: block;
+			position: relative;
+			width: 13px;
+			height: 13px;
+			left: -20px;
+			top: 19px;
+		}
+		&.ca::before {
+			background: #809275;
+		}
+		&.fr::before {
+			background: #A3AFF4;
+		}
+		&.de::before {
+			background: #F189E6;
+		}
+		&.it::before {
+			background: #F1594D;
+		}
+		&.jp::before {
+			background: #BFDCB0;
+		}
+		&.ru::before {
+			background: #81CACA;
+		}
+		&.us::before {
+			background: #F0AEAB;
+		}
+		&.gb::before {
+			background: #EFE232;
+		}
+		&:last-child {
+			@include bodyStyle(11px, 1.1rem, 300);
+			flex: 1 0 100%;
+			margin-top: 17px;
+			padding: 0;
+			&::before {
+				content: '';
+				display: none;
+			}
+		}
+	}
+}

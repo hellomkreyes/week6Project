@@ -1,0 +1,43 @@
+.nav {
+	width: 13%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1% 2%;
+	background: fade-out($darkblue, 0.5);
+	z-index: 10;
+	&__Logo img {
+		width: 100%;
+		height: auto;
+	}
+	&__listItems {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		padding: 0;
+		li {
+			width: 100%;
+			padding: 5% 0;
+			text-align: center;
+			a {
+				padding: 7% 0;
+				display: inline-block;
+				width: 100%;
+				font-size: 16px;
+				font-size: 1.6rem;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: $blue;
+				// color: lighten($lightestgreen, 10%);
+				letter-spacing: 2px;
+				transition: all 0.45s ease-in-out;
+				&:hover {
+					color: $lightgreen;
+					text-shadow: -2px 2px 20px $lightgreen;
+				}
+			}
+		}
+	}
+}

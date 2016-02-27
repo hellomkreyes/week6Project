@@ -1,12 +1,10 @@
 html {
+	font-size: 10px; //this is the fall-back if rems are not supported by the browser
 	font-size: 62.5%;
-	// font-size: 10px;
 }
 
 body {
-	font-family: $baseFont;
-	font-size: 18px;
-	font-size: 1.8rem;
+	@include bodyStyle(18px, 1.8rem, 300);
 	margin: 0;
 	padding: 0;
 }
@@ -32,29 +30,24 @@ a {
 }
 
 h1 {
-	font-family: $baseFont;
-	font-size: 7rem;
-	font-weight: 300;
+	@include headingStyle(70px, 7rem, 700);
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: 2rem;
 	margin: 0;
+	padding: 0 0 2rem;
 }
 
 h2 {
-	font-family: $headerFont;
-	font-size: 4rem;
+	@include headingStyle(30px, 3rem, 400);
 	text-align: center;
 	margin: 0;
 }
 
 h3 {
-	font-family: $baseFont;
-	font-size: 2.6rem;
-	font-weight: 300;
+	@include bodyStyle(26px, 2.6rem, 300);
+	margin: 0;
 }
 
 h1, h2, h3 {
 	color: lighten($lightestgreen, 10%); 
 }
-
-
