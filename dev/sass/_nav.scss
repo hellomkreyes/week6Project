@@ -42,3 +42,41 @@
 		}
 	}
 }
+
+@media (max-width: 480px) {
+	.nav {
+		display: none;
+		width: 100%;
+		position: relative;
+		&__listItems {
+			
+			&__Logo {
+				display: none;
+			}
+			li {
+				padding-top: 0;
+				a {
+					font-size: 1.4rem;
+					padding-top: 0;
+				}
+			}
+		}
+		&__hamburger {
+		      // display: none;
+		      background: none;
+		      position: absolute;
+		      top: 0;
+		      left: 0;
+		      line-height: 45px;
+		      padding: 0 7%;
+		      color: #fff;
+		      border: 0;
+		      font-size: 1.4em;
+		      font-weight: bold;
+		      cursor: pointer;
+		      outline: none;
+		      z-index: 10;
+		}
+	}
+}
+

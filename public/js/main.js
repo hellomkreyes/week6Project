@@ -271,7 +271,16 @@ app.chartSet = function () {
 app.init = function () {
   app.getData();
   app.chartShow();
+  app.hamburger();
 };
+
+app.hamburger = function(){
+  $('.nav__hamburger').on('click', function(e){
+    e.preventDefault();
+
+    $('nav').show("slide", { direction: "left" }, 1000);
+  })
+}
 
 //DOC READY
 $(function () {
