@@ -43,20 +43,29 @@
   .infograph {
     padding-top: 3%;
     background-position: bottom center;
+    background-blend-mode: soft-light;
+    flex-flow: column wrap;
   }
   .infograph .infograph__wrapper {
       justify-content: center;
   }
   .infograph .infograph__wrapper__renewableInfo {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
-    padding-bottom: 35%;
+    // padding-bottom: 35%;
+  }
+  .infograph__renewableInfo__info1, .infograph__renewableInfo__info2 {
+  	width: 40%;
   }
   .infograph .infograph__wrapper__climateInfo {
     width: 100%;
     text-align: center;
-    padding-top: 4%;
+    justify-content: space-between;
+    // padding-top: 4%;
+  }
+  .infograph__climateInfo__info1, .infograph__climateInfo__info2 {
+  	width: 40%;
   }
   .infograph .infograph__wrapper__title {
     width: 100%;
@@ -99,6 +108,9 @@
 			}
 		}
 	}
+	.infograph__renewableInfo__info1, .infograph__renewableInfo__info2, .infograph__climateInfo__info1, .infograph__climateInfo__info2 {
+  	width: 100%;
+  	}
 	.wrapper {
 		padding: 0;
 	}
