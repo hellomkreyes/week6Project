@@ -214,6 +214,7 @@ app.chartData = {
 
 //GLOBAL CHART OPTION VARIABLE - THESE ARE EXTRA FEATURES FROM CHART.JS
 app.chartOptions = {
+    Chart.defaults.global.responsive = true;
     ///Boolean - Whether grid lines are shown across the chart
     scaleShowGridLines : true,
     scaleFontColor: "#FFF",
