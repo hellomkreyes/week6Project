@@ -1,7 +1,7 @@
 // INFOGRAPHIC
 .infograph {
 	max-width: 100%;
-	padding: 10% 0;
+	padding: 0% 2%;
 	background-color: $blue;
 	background-image: url('../assets/earth.png');
 	background-repeat: no-repeat;
@@ -38,3 +38,26 @@
 		}
 	}
 }
+@media (max-width: 480px) {
+	.infograph {
+		background-image: none;
+		.infograph__wrapper {
+			margin-top: 6%;
+			&__renewableInfo {
+				width: 100%;
+			}
+			&__climateInfo {
+				width: 100%;
+			}
+			&__title h2{
+				font-size: 3rem;
+			}
+		}
+	}
+	.wrapper {
+		padding: 0;
+	}
+}
+			
+
+
