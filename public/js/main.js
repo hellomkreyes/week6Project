@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 //TO DO:
 //REVIEW VARIABLE NAMES FOR DREW-NESS
 
 //DECLARE GLOBAL APP VARIABLE
 var app = {};
-app.hiddenBox = $("#bannerMessage");
+// app.hiddenBox = $( "#bannerMessage" );
 app.typeSelection = ""; //FOR CHART SELECT BUTTON
 
 //URLS FOR DIFFERENT ENDPOINTS
@@ -238,7 +238,7 @@ app.chartShow = function () {
     $('#bannerMessage').hide();
     $('#bannerMessage h3').html($(this).data('title'));
     $('#bannerMessage p').html($(this).data('text'));
-    app.hiddenBox.slideToggle();
+    $('#bannerMessage').slideToggle();
     //ASSIGNS TYPESELECTION TO DATA VALUE OF BUTTON
     app.typeSelection = $(this).data("energy");
     console.log(app.typeSelection);
@@ -261,12 +261,21 @@ app.chartShow = function () {
   });
 };
 
+//HAMBURGER NAV FUNCTIONALITY!
 app.hamburger = function () {
-  $('.nav__hamburger').on('click', function (e) {
+  $('.hamburger__icon').on('click', function (e) {
     e.preventDefault();
-    $('nav').slideToggle();
+    $('nav').fadeIn(500).show();
+  });
+  $('.fa-times-circle').on('click', function (e) {
+    e.preventDefault();
+    $('nav').fadeOut(500).hide();
+  });
+  $('.nav__listItems a').on('click', function () {
+    $('nav').fadeOut(500).hide();
   });
 };
+
 //CHART FUNCTION. CREATES CHART ON OUR PAGE
 app.chartSet = function () {
   var ctx = $('#myChart').get(0).getContext("2d");
