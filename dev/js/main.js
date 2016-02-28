@@ -278,12 +278,21 @@ app.chartShow = function() {
   });
 };
 
+//HAMBURGER NAV FUNCTIONALITY!
 app.hamburger = function() {
-  $('.nav__hamburger').on('click', function(e) {
+  $('.hamburger__icon').on('click', function(e) {
     e.preventDefault();
-    $('nav').slideToggle();
+    $('nav').fadeIn(500).show();
   })
+  $('.fa-times-circle').on('click', function(e) {
+    e.preventDefault();
+    $('nav').fadeOut(500).hide();
+  });
+  $('.nav__listItems a').on('click', function() {
+    $('nav').fadeOut(500).hide();
+  });
 }
+
 //CHART FUNCTION. CREATES CHART ON OUR PAGE
 app.chartSet = function() {
   var ctx = $('#myChart').get(0).getContext("2d");
