@@ -15,9 +15,6 @@
 			flex-flow: column wrap;
 			align-items: center;
 		}
-		@media (max-width: 480px) {
-			width: 100%;
-		}
 		li {
 			width: 18%;
 			padding: 10px;
@@ -41,6 +38,9 @@
 			}
 			@media(max-width: 767px) {
 				width: 50%;
+			}
+			@media (max-width: 480px) {
+				width: 100%;
 			}
 		}
 	}
