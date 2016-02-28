@@ -28,8 +28,13 @@
 				background: $blue;
 			}
 			@media(max-width: 940px) {
-				width: 35%;
+				width: 40%;
 				margin: 5px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				padding: 1px 20px;
 			}
 			@media(max-width: 767px) {
 				width: 50%;
@@ -50,7 +55,7 @@
 svg {
 	width: 90%;
 	@media(max-width: 940px) {
-		width: 70%;
+		width: 30%;
 	}
 	path {
 	fill: $lightestgreen;
