@@ -13,6 +13,11 @@
       cursor: pointer;
       outline: none;
       z-index: 5;
+      transition: all 0.45s ease-in-out;
+      &:hover {
+      	color: $lightgreen;
+		text-shadow: -1px 1px 20px $lightgreen;
+      }
 	}
 }
 
@@ -33,11 +38,16 @@
 		color: white;
 		margin: 1rem;
 		cursor: pointer;
+		transition: all 0.45s ease-in-out;
+		&:hover {
+			color: $lightgreen;
+			text-shadow: -1px 1px 20px $lightgreen;
+		}
 	}
 	&__Logo img {
 		max-width: 100%;
-		// width: 100%;
 		height: auto;
+		padding: 0 0 1%;
 	}
 	&__listItems {
 		display: flex;
@@ -46,53 +56,33 @@
 		padding: 0;
 		li {
 			width: 100%;
-			padding: 2% 0;
+			padding: 1.5% 0;
 			text-align: center;
+			@media (max-width: 767px) {
+				margin: 2% 0;
+			}
+			@media (max-width: 480px) {
+				margin: 3% 0;
+			}
 			a {
-				padding: 4%;
+				padding: 3%;
 				width: 100%;
-				font-size: 50px;
-				font-size: 5rem;
-				font-weight: 400;
+				@include bodyStyle(40px, 4rem, 700);
+				letter-spacing: 5px;
 				text-transform: uppercase;
 				text-align: center;
 				color: white;
-				// color: lighten($blue, 2);
-				letter-spacing: 2px;
 				transition: all 0.45s ease-in-out;
 				&:hover {
 					color: $lightgreen;
 					text-shadow: -2px 2px 20px $lightgreen;
 				}
+				@media (max-width: 480px) {
+					@include bodyStyle(35px, 3.5rem, 700);
+					width: 100%;
+					width: 50%;
+				}
 			}
 		}
 	}
 }
-
-// @media (max-width: 600px) {
-// 	.nav__Logo {
-// 		display: none;
-// 	}
-// 	.nav__listItems {
-// 		// padding-top: 30%;
-// 	}
-// 	.nav {
-// 		display: none;
-// 		width: 50%;
-// 		background: $lightestgreen;
-// 		&__hamburger {
-// 			display: inline-block;
-// 		}			
-// 			li {
-// 				// padding-top: 0;
-// 			a {
-// 				font-size: 1.4rem;
-// 				&:hover {
-// 					color: white;
-// 					text-shadow: -2px 2px 20px $lightgreen;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
