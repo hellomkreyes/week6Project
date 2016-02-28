@@ -7,12 +7,12 @@ body {
 	@include bodyStyle(18px, 1.8rem, 300);
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
 .wrapper {
 	max-width: 1171px;
 	margin: 0 auto; 
-	padding-left: 9%; 
 }
 
 ul {
