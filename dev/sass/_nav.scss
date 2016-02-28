@@ -69,30 +69,40 @@
 	}
 }
 
-// @media (max-width: 600px) {
-// 	.nav__Logo {
-// 		display: none;
-// 	}
-// 	.nav__listItems {
-// 		// padding-top: 30%;
-// 	}
-// 	.nav {
-// 		display: none;
-// 		width: 50%;
-// 		background: $lightestgreen;
-// 		&__hamburger {
-// 			display: inline-block;
-// 		}			
-// 			li {
-// 				// padding-top: 0;
-// 			a {
-// 				font-size: 1.4rem;
-// 				&:hover {
-// 					color: white;
-// 					text-shadow: -2px 2px 20px $lightgreen;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+@media (max-width: 480px) {
+	.nav {
+		display: none;
+		width: 50%;
+		// position: relative;
+		&__listItems {
+			
+			&__Logo {
+				display: none;
+			}
+			li {
+				padding-top: 0;
+				a {
+					font-size: 1.4rem;
+					padding-top: 0;
+				}
+			}
+		}
+		// &__hamburger {
+		//       // display: none;
+		//       background: none;
+		//       position: absolute;
+		//       top: 0;
+		//       left: 0;
+		//       line-height: 45px;
+		//       padding: 0 7%;
+		//       color: #fff;
+		//       border: 0;
+		//       font-size: 1.4em;
+		//       font-weight: bold;
+		//       cursor: pointer;
+		//       outline: none;
+		//       z-index: 10;
+		// }
+	}
+}
 

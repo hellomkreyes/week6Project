@@ -214,7 +214,6 @@ app.chartData = {
 
 //GLOBAL CHART OPTION VARIABLE - THESE ARE EXTRA FEATURES FROM CHART.JS
 app.chartOptions = {
-    Chart.defaults.global.responsive = true;
     ///Boolean - Whether grid lines are shown across the chart
     scaleShowGridLines : true,
     scaleFontColor: "#FFF",
@@ -245,7 +244,9 @@ app.chartOptions = {
     //Boolean - Whether to fill the dataset with a colour
     datasetFill : true,
     //String - A legend template
-    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    // legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+    responsive: true,
+
 };
 
 //ON BUTTON CLICK, LABEL & DATA VALUES IN CHART DATA ARE REASSIGNED TO OUR FILTERED INFO FROM THE API
