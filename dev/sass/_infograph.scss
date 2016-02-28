@@ -1,7 +1,7 @@
 // INFOGRAPHIC
 .infograph {
 	max-width: 100%;
-	padding: 0% 2%;
+	padding: 10% 0;
 	background-color: $blue;
 	background-image: url('../assets/earth.png');
 	background-repeat: no-repeat;
@@ -38,6 +38,60 @@
 		}
 	}
 }
+
+@media (max-width: 940px) {
+  .infograph {
+    padding-top: 3%;
+    background-position: bottom center;
+    background-blend-mode: soft-light;
+    flex-flow: column wrap;
+  }
+  .infograph .infograph__wrapper {
+      justify-content: center;
+  }
+  .infograph .infograph__wrapper__renewableInfo {
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    // padding-bottom: 35%;
+  }
+  .infograph__renewableInfo__info1, .infograph__renewableInfo__info2 {
+  	width: 40%;
+  }
+  .infograph .infograph__wrapper__climateInfo {
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    // padding-top: 4%;
+  }
+  .infograph__climateInfo__info1, .infograph__climateInfo__info2 {
+  	width: 40%;
+  }
+  .infograph .infograph__wrapper__title {
+    width: 100%;
+    order: -1;
+  }
+  .footer__wrapper {
+      padding: 1% 0 0 0;
+  }
+  .resources__renewableResources a img {
+    padding-top: 10%;
+  } 
+}
+
+@media (max-width: 767px){
+    .infograph {
+        padding-top: 3%;
+        background-position: 50% 80%;
+    }
+}
+
+@media (max-width: 767px) {
+  .footer__devs p {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 480px) {
 	.infograph {
 		background-image: none;
@@ -54,10 +108,10 @@
 			}
 		}
 	}
+	.infograph__renewableInfo__info1, .infograph__renewableInfo__info2, .infograph__climateInfo__info1, .infograph__climateInfo__info2 {
+  	width: 100%;
+  }
 	.wrapper {
 		padding: 0;
 	}
 }
-			
-
-

@@ -24,11 +24,14 @@ geothermal by Created by FAKTOR VIERfrom the Noun Project
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!--LANDING PAGE-->
-	<header class="landing">
-		<!--NAV-->
-		<button class="nav__hamburger">&#9776;</button>
-		<nav class="nav">
+<!--HAMBURGER-->
+	<section class="hamburger">
+		<button class="hamburger__icon">&#9776;</button>
+	</section>
+<!--NAV-->
+	<nav class="nav">
+		<i class="fa fa-times-circle"></i>
+		<div class="wrapper">
 		    <ul class="nav__listItems">
 		      	<li class="nav__Logo">
 		      		<img src="assets/logoWhiteBlue.png" alt="Project Renew Logo - temperature data chart">
@@ -46,7 +49,10 @@ geothermal by Created by FAKTOR VIERfrom the Noun Project
 		      		<a href="#resourcePage">Resources</a>
 		      	</li>
 		    </ul>
-		</nav>
+		</div>
+	</nav>
+<!--LANDING PAGE-->
+	<header class="landing">
 		<div class="wrapper">
 	    	<div class='landing__innerContainer'>
 	       		<img class='landing__innerContainer__imgLogo'src="assets/whiteBigLogo.png">
@@ -74,7 +80,7 @@ geothermal by Created by FAKTOR VIERfrom the Noun Project
 <!--ENERGY-->
 	<section class="energy" id="energy">
 		<div class="wrapper">
-			<h2 class="energy__title">Energy</h2>
+			<h2 class="energy__title">Renewable Energy Sources</h2>
 			<ul class="energy__listItems">
 				<li data-title="BioGas" data-energy="BIOGAS" data-text="Biogas can be produced from raw materials such as agricultural waste, manure, municipal waste, plant material, sewage, green waste or food waste. It is a renewable energy source and in many cases exerts a very small carbon footprint.">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M18.546,84.082h48.799c0.617,0,1.115,0.498,1.115,1.109v3.334c0,0.619-0.498,1.116-1.115,1.116H18.546   c-0.611,0-1.116-0.497-1.116-1.116v-3.334C17.43,84.58,17.935,84.082,18.546,84.082z"/></g><g><path d="M65.895,17.687v63.907h-45.89V16.877c0-3.42,2.772-6.193,6.185-6.193h33.52c2.148,0,4.145,1.13,5.275,2.964   c-8.168-1.898-16.579,1.984-20.453,9.42c-8.112,0.817-14.027,8.062-13.21,16.174c0.206,2.012,0.824,3.975,1.813,5.745   c4.023,7.167,4.947,15.669,2.565,23.532c11.781-4.613,20.795-14.383,24.45-26.497c2.068-6.854-1.08-14.205-7.465-17.439   c-3.782,3.32-5.716,8.275-5.19,13.28c-1.691-3.562-1.877-7.656-0.526-11.368C49.764,18.839,58.238,14.893,65.895,17.687z"/></g><g><path d="M71.916,76.348c0,2.117,1.721,3.838,3.84,3.838s3.838-1.721,3.838-3.838V43.025h2.34v33.322   c0,3.412-2.758,6.178-6.178,6.178c-3.412,0-6.178-2.766-6.178-6.178V59.682h2.338V76.348z"/></g><g><path d="M69.605,20.681l8.822,9.1v7.521c0,1.294,1.047,2.346,2.34,2.346c1.295,0,2.346-1.052,2.346-2.346v-9.42L72.969,17.417   c-0.902-0.924-2.381-0.945-3.312-0.05C68.725,18.27,68.703,19.756,69.605,20.681z"/></g></svg>
@@ -137,14 +143,17 @@ geothermal by Created by FAKTOR VIERfrom the Noun Project
 					<h3 class="resources__renewableResources__title">Apocalypse!</h3>
 					<p class="resources__renewableResources_info">But just in case everything does go to sh*t, consider these resources instead...</p>
 				<div class="resources__renewableResources">
-					<a href="http://writenowcanada.com"><!--Lynn's contact-your-politician site -->
-						<img src="http://placehold.it/300x150" alt="Write To Your Local Politician">
+					<a href="http://writenowcanada.com" target="_blank"><!--Lynn's contact-your-politician site -->
+						<img src="assets/lynn.png" alt="Write To Your Local Politician">
+						<p>Write Now, Canada!</p>
 					</a>
-					<a href=""><!--Kari's apocalypse website-->
-						<img src="http://placehold.it/300x150" alt="">
+					<a href="http://karifairweather.com/survive/" target="_blank"><!--Kari's apocalypse website-->
+						<img src="assets/kari.png" alt="">
+						<p>Survive</p>
 					</a>
-					<a href="www.suzettemccanny.com/what_a_lovely_day"><!--Suzette's We're All Gonna Die site -->
-						<img src="http://placehold.it/300x150" alt="What A Lovely Day! We're All Going To Die">
+					<a href="http://www.suzettemccanny.com/what_a_lovely_day" target="_blank"><!--Suzette's We're All Gonna Die site -->
+						<img src="assets/suzette.png" alt="What A Lovely Day! We're All Going To Die">
+						<p>What A Lovely Day!</p>
 					</a>
 				</div>
 			</div>
@@ -152,18 +161,18 @@ geothermal by Created by FAKTOR VIERfrom the Noun Project
 				<div class="wrapper footer__wrapper">
 		          <div class="footer__devs">
 		          	  <p>&copy; 2016 | Coded by </p>
-		              <p class="footer__dev1"><a href="">M.K. Reyes</a></p>
-		              <p class="footer__dev2"><a href="">Lauren David</a></p>
-		              <p class="footer__dev3"><a href="">Fatima Gueye</a></p>
-		              <p class="footer__dev4"><a href="">Adam Brady</a></p>
+		              <p class="footer__dev1"><a href="http://hellomkreyes.com/">M.K. Reyes</a></p>
+		              <p class="footer__dev2"><a href="http://laurendavid.ca/">Lauren David</a></p>
+		              <p class="footer__dev3"><a href="http://fgueye.com/">Fatima Gueye</a></p>
+		              <p class="footer__dev4"><a href="http://adambrady.ca/">Adam Brady</a></p>
 		          </div>
 		          <div class="footer__links">
 		            <ul>
 		            	<li class="footer__links__twitter">
-		            		<a href=""></a>
+		            		<a href="https://twitter.com/algore" target="_blank"><i class="fa fa-twitter"></i></a>
 		            	</li>
 		            	<li class="footer__links__github">
-		            		<a href=""></a>
+		            		<a href="https://github.com/Bankbeans" target="_blank"><i class="fa fa-github"></i></a>
 		            	</li>
 		            </ul>
 		          </div>

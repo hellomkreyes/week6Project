@@ -1,16 +1,53 @@
+.hamburger {
+	&__icon {
+      background: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      line-height: 45px;
+      padding: 2% 3%;
+      color: #fff;
+      border: 0;
+      font-size: 4rem;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      z-index: 5;
+      transition: all 0.45s ease-in-out;
+      &:hover {
+      	color: $lightgreen;
+		text-shadow: -1px 1px 20px $lightgreen;
+      }
+	}
+}
+
 .nav {
-	width: 11%;
+	display: none;
+	width: 100vw;
 	position: fixed;
+	height: 100vh;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	padding: 1% 2%;
-	background: fade-out($darkblue, 0.5);
+	background: rgba($darkblue, 0.9);
 	z-index: 10;
+	.fa-times-circle {
+		font-size: 5rem;
+		color: white;
+		margin: 1rem;
+		cursor: pointer;
+		transition: all 0.45s ease-in-out;
+		&:hover {
+			color: $lightgreen;
+			text-shadow: -1px 1px 20px $lightgreen;
+		}
+	}
 	&__Logo img {
-		width: 100%;
+		max-width: 100%;
 		height: auto;
+		padding: 0 0 1%;
 	}
 	&__listItems {
 		display: flex;
@@ -19,64 +56,33 @@
 		padding: 0;
 		li {
 			width: 100%;
-			padding: 5% 0;
+			padding: 1.5% 0;
 			text-align: center;
+			@media (max-width: 767px) {
+				margin: 2% 0;
+			}
+			@media (max-width: 480px) {
+				margin: 3% 0;
+			}
 			a {
-				padding: 7% 0;
-				display: inline-block;
+				padding: 3%;
 				width: 100%;
-				font-size: 16px;
-				font-size: 1.6rem;
-				font-weight: 400;
+				@include bodyStyle(40px, 4rem, 700);
+				letter-spacing: 5px;
 				text-transform: uppercase;
-				text-align: left;
-				color: $blue;
-				// color: lighten($lightestgreen, 10%);
-				letter-spacing: 2px;
+				text-align: center;
+				color: white;
 				transition: all 0.45s ease-in-out;
 				&:hover {
 					color: $lightgreen;
 					text-shadow: -2px 2px 20px $lightgreen;
 				}
-			}
-		}
-	}
-}
-
-@media (max-width: 480px) {
-	.nav {
-		display: none;
-		width: 50%;
-		position: relative;
-		&__listItems {
-			
-			&__Logo {
-				display: none;
-			}
-			li {
-				padding-top: 0;
-				a {
-					font-size: 1.4rem;
-					padding-top: 0;
+				@media (max-width: 480px) {
+					@include bodyStyle(35px, 3.5rem, 700);
+					width: 100%;
+					width: 50%;
 				}
 			}
 		}
-		&__hamburger {
-		      // display: none;
-		      background: none;
-		      position: absolute;
-		      top: 0;
-		      left: 0;
-		      line-height: 45px;
-		      padding: 0 7%;
-		      color: #fff;
-		      border: 0;
-		      font-size: 1.4em;
-		      font-weight: bold;
-		      cursor: pointer;
-		      outline: none;
-		      z-index: 10;
-		}
 	}
 }
-

@@ -6,6 +6,15 @@
 		width: 80%;
 		margin: 0 auto;
 		padding: 3% 0;
+		@media(max-width: 940px) {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		}
+		@media(max-width: 767px) {
+			flex-flow: column wrap;
+			align-items: center;
+		}
 		li {
 			width: 18%;
 			padding: 10px;
@@ -13,6 +22,23 @@
 			text-align: center;
 			background: darken($blue,17%);
 			border-radius: 10px;
+			transition: all 1s;
+			cursor: pointer;
+			&:hover {
+				background: $blue;
+			}
+			@media(max-width: 940px) {
+				width: 40%;
+				margin: 5px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				padding: 1px 20px;
+			}
+			@media(max-width: 767px) {
+				width: 50%;
+			}
 		}
 	}
 	&__itemInfo {
@@ -20,14 +46,29 @@
 		width: 80%;
 		margin: 0 auto;
 		text-align: center;
+		h3 {
+			margin-top: 4rem;
+		}
 		p {
 			color: $lightestgreen;
+			margin-bottom: 4rem;
+			@media (max-width: 480px) {
+				@include bodyStyle(15px, 1.5rem, 300)
+				text-align: justify;
+			}
+		}
+		canvas {
+			display: block;
+			max-width: 100%;
 		}
 	}
 }
 
 svg {
 	width: 90%;
+	@media(max-width: 940px) {
+		width: 30%;
+	}
 	path {
 	fill: $lightestgreen;
 	}
@@ -37,10 +78,16 @@ svg {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	@media (max-width: 940px) {
+		justify-content: center;
+	}
 	li {
 		padding-left: 22px;
 		padding-right: 25px;
 		color: $lightestgreen;
+		@media (max-width: 767px) {
+			@include bodyStyle(15px, 1.5rem, 300);
+		}
 		&:before {
 			content: '';
 			display: block;
@@ -49,6 +96,11 @@ svg {
 			height: 13px;
 			left: -20px;
 			top: 19px;
+			@media (max-width: 767px) {
+				width: 11px;
+				height: 11px;
+				top: 16px;
+			}
 		}
 		&.ca::before {
 			background: #809275;

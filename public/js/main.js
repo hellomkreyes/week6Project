@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 //TO DO:
 //REVIEW VARIABLE NAMES FOR DREW-NESS
 
 //DECLARE GLOBAL APP VARIABLE
 var app = {};
-app.hiddenBox = $("#bannerMessage");
+// app.hiddenBox = $( "#bannerMessage" );
 app.typeSelection = ""; //FOR CHART SELECT BUTTON
 
 //URLS FOR DIFFERENT ENDPOINTS
@@ -228,7 +228,9 @@ app.chartOptions = {
   //Boolean - Whether to fill the dataset with a colour
   datasetFill: true,
   //String - A legend template
-  legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+  // legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+  //responsive
+  responsive: true
 };
 
 //ON BUTTON CLICK, LABEL & DATA VALUES IN CHART DATA ARE REASSIGNED TO OUR FILTERED INFO FROM THE API
@@ -238,7 +240,7 @@ app.chartShow = function () {
     $('#bannerMessage').hide();
     $('#bannerMessage h3').html($(this).data('title'));
     $('#bannerMessage p').html($(this).data('text'));
-    app.hiddenBox.slideToggle();
+    $('#bannerMessage').slideToggle();
     //ASSIGNS TYPESELECTION TO DATA VALUE OF BUTTON
     app.typeSelection = $(this).data("energy");
     console.log(app.typeSelection);
@@ -261,6 +263,21 @@ app.chartShow = function () {
   });
 };
 
+//HAMBURGER NAV FUNCTIONALITY!
+app.hamburger = function () {
+  $('.hamburger__icon').on('click', function (e) {
+    e.preventDefault();
+    $('nav').fadeIn(500).show();
+  });
+  $('.fa-times-circle').on('click', function (e) {
+    e.preventDefault();
+    $('nav').fadeOut(500).hide();
+  });
+  $('.nav__listItems a').on('click', function () {
+    $('nav').fadeOut(500).hide();
+  });
+};
+
 //CHART FUNCTION. CREATES CHART ON OUR PAGE
 app.chartSet = function () {
   var ctx = $('#myChart').get(0).getContext("2d");
@@ -271,6 +288,7 @@ app.chartSet = function () {
 app.init = function () {
   app.getData();
   app.chartShow();
+  app.hamburger();
 };
 
 //DOC READY
