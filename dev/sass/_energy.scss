@@ -39,6 +39,9 @@
 			@media(max-width: 767px) {
 				width: 50%;
 			}
+			@media (max-width: 480px) {
+				width: 100%;
+			}
 		}
 	}
 	&__itemInfo {
@@ -71,6 +74,11 @@ svg {
 	}
 	path {
 	fill: $lightestgreen;
+	}
+	@media (max-width: 480px) {
+		&.geothermal {
+			min-width: 30%;
+		}
 	}
 }
 
