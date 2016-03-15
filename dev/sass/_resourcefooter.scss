@@ -68,21 +68,19 @@
 	padding: 1% 2%;
 	flex-flow: column wrap;
 	justify-content: space-around;
+	display: flex;
 	.footer_links {
-		width: 100%;
 		ul {
 			display: flex;
 			margin: auto;
 		}
 	}
+	.footer__copyright {
+	}
 	.footer__devs {
-		width: 100%;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
-		p {
-			width: 15%;
-		}
 		a {
 			color: $blue;
 			text-transform: uppercase;
@@ -93,7 +91,6 @@
 		}
 	}
 	.footer__links {
-		width: 100%;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
